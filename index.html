@@ -634,7 +634,9 @@
     
     let fontSize = 14;
     
-    if (contentLength > 1000) {
+    if (contentLength > 2000) {
+      fontSize = 10;
+    } else if (contentLength > 1000) {
       fontSize = 11;
     } else if (contentLength > 500) {
       fontSize = 12;
